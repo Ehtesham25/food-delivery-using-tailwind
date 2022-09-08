@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { AnimatePresence } from "framer-motion"
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import { Header, MainContainer, CreateItem } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimatePresence mode="wait" >
+      <div className='w-screen h-auto flex flex-col bg-gray-100 '>
+        <Header />
+        <main className="mt-14 md:mt-20 px-0 md:px-12 py-4 w-full ">
+          <Routes>
+            <Route path="/" element={<MainContainer />} />
+            <Route path="/create" element={<CreateItem />} />
+          </Routes>
+        </main>
+      </div>
+    </AnimatePresence>
   );
 }
 
