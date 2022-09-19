@@ -1,13 +1,30 @@
-import React, { createContext, useContext, useReducer } from "react";
+import { createContext, useReducer } from "react";
 
-export const StateContext = createContext()
+import { fetchUser } from "../utils/fetchUser";
+import reducer from "./reducer";
 
-export const StateProvider = ({ reducer, children, initialState }) => (
-    <StateContext.Provider value={useReducer(reducer, initialState)} >
-        {children}
-    </StateContext.Provider>
-)
+const userInfo = fetchUser()
+export const INITIAL_STATE = {
+    user: userInfo,
+    cartItems: [],
+    error: "",
+    isCartShow: false
+}
 
+export const UserContext = createContext(INITIAL_STATE);
 
+export const StateProvider = ({ children }) => {
+    const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
-export const useStateValue = () => useContext(StateContext)
+    return (
+        <UserContext.Provider
+            value={{
+                state,
+                dispatch,
+            }}
+        >
+            {children}
+        </UserContext.Provider>
+    );
+};
+
