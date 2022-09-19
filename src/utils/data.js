@@ -2,6 +2,13 @@ import I1 from "../assets/i1.png";
 import F1 from "../assets/f1.png";
 import C3 from "../assets/c3.png";
 import Fi1 from "../assets/fi1.png";
+import waterMellon from "../assets/f10.png"
+import f2 from "../assets/f2.png"
+import f3 from "../assets/f3.png"
+import f4 from "../assets/f4.png"
+import f5 from "../assets/f5.png"
+import f6 from "../assets/f6.png"
+import f7 from "../assets/f7.png"
 
 export const homeData = [
     {
@@ -73,3 +80,62 @@ export const categories = [
         urlParamName: "drinks",
     },
 ];
+
+export const freshFruites = [
+    {
+        id: 1,
+        name: 'Chocolate & Vanilla',
+        img: waterMellon,
+        calories: '7.6',
+        qty: 1,
+        price: '6.1'
+    },
+    {
+        id: 2,
+        name: 'Chocolate & Vanilla',
+        img: f2,
+        calories: '7.6',
+        qty: 1,
+        price: '4.2'
+    },
+    {
+        id: 3,
+        name: 'Chocolate & Vanilla',
+        img: f3,
+        calories: '7.6',
+        qty: 1,
+        price: '1.8'
+    },
+    {
+        id: 4,
+        name: 'Chocolate & Vanilla',
+        img: f4,
+        calories: '7.6',
+        qty: 1,
+        price: '2.9'
+    },
+    {
+        id: 5,
+        name: 'Chocolate & Vanilla',
+        img: f5,
+        calories: '7.6',
+        qty: 1,
+        price: '3.6'
+    },
+    {
+        id: 6,
+        name: 'Chocolate & Vanilla',
+        img: f6,
+        calories: '7.6',
+        qty: 1,
+        price: '4.8'
+    },
+    {
+        id: 7,
+        name: 'Chocolate & Vanilla',
+        img: f7,
+        calories: '7.6',
+        qty: 1,
+        price: '3.7'
+    },
+]
