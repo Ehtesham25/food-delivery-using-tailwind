@@ -1,3 +1,7 @@
 export const userTypes = {
-    SET_USER: 'SET_USER'
+    SET_USER: 'SET_USER',
+    SET_CART_SHOW: 'SET_CART_SHOW',
+    SET_ADD_TO_CART: 'SET_ADD_TO_CART',
+    SET_CLEAR_CART: 'SET_CLEAR_CART',
+    SET_QTY: 'SET_QTY',
 }
