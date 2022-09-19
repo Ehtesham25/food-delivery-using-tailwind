@@ -72,7 +72,7 @@ const CreateItem = () => {
             postData,
 
         }
-     await setDoc(doc(fireStore, "foodDelivery", `${Date.now()}`), { data, merge: true })
+        await setDoc(doc(fireStore, "foodDelivery", `${Date.now()}`), { data, merge: true })
         setFields(true)
         setAlertStatus('success')
         setMsg("Data uploaded successfully")
@@ -91,8 +91,8 @@ const CreateItem = () => {
                     </p>}
                 <Input handleChange={handleChange} Icon={MdFastfood} placeholder="title" name="title" type="text" />
                 <div className='w-full'>
-                    <select name='catagory' onChange={handleChange} className='w-full outline-none text-base border-b-2 rounded bg-white'>
-                        <option value="other" />
+                    <select name='catagory' onChange={handleChange} className='w-full outline-none text-base border-b-2 rounded py-1 bg-white'>
+                        <option value="other" disabled selected>select any catagory.</option>
                         {categories && categories.map((item, index) => (
                             <option key={index} value={item.urlParamName} className="font-medium text-headingColor text-base capitalize">{item.name} </option>
                         ))}
@@ -143,8 +143,8 @@ const CreateItem = () => {
                     )}
                 </div>
                 <div className=' flex flex-col md:flex-row gap-3 '>
-                    <Input handleChange={handleChange} Icon={MdFoodBank} placeholder="calories" name="calories" type="number"  />
-                    <Input handleChange={handleChange} Icon={MdAttachMoney} placeholder="price" name="price" type="number"  />
+                    <Input handleChange={handleChange} Icon={MdFoodBank} placeholder="calories" name="calories" type="number" />
+                    <Input handleChange={handleChange} Icon={MdAttachMoney} placeholder="price" name="price" type="number" />
 
                 </div>
                 <div className='flex w-full items-center '>
