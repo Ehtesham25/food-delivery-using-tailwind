@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Cart from './Cart';
 import Dishes from './Dishes';
@@ -6,8 +6,10 @@ import Dishes from './Dishes';
 import Home from './Home'
 import RowContainer from './RowContainer';
 import Text from './Text';
+import { UserContext } from '../context/StateProvider';
 
 const MainContainer = () => {
+    const { state: { isCartShow } } = useContext(UserContext)
     const [scroll, setScroll] = useState(0);
     const handleScroll = (index) => {
         if (index === 1) {
@@ -17,6 +19,7 @@ const MainContainer = () => {
             setScroll(prev => prev - 200)
         }
     }
+
 
     return (
         <div className='w-full h-auto flex flex-col items-center justify-between'>
@@ -34,8 +37,10 @@ const MainContainer = () => {
                 </div>
                 <RowContainer flag={true} scroll={scroll} />
             </section>
-            <Dishes/>
-            {/* <Cart/> */}
+            <Dishes />
+            {isCartShow &&
+                <Cart />
+            }
         </div>
     )
 }
