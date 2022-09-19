@@ -33,11 +33,10 @@ const Header = () => {
         setIsmenu(false)
     }
     const handleNavigate = () => {
-      
         setIsmenu(false)
     }
     return (
-        <header className='fixed z-40  w-full px-10 py-6 flex' >
+        <header className=' bg-gray-100 fixed z-40  w-full px-10 py-6 flex' >
             {/* for desktop view */}
             <div className='hidden md:flex w-full h-full items-center justify-between'>
                 <div className='flex items-center gap-8'>
@@ -48,7 +47,7 @@ const Header = () => {
                         opacity: 1, x: 0
                     }} exit={{ opacity: 0, x: 200 }} className='flex  items-center ml-auto gap-3' >
                         {["Home", "Menu", "About"].map((item, index) => (
-                            <li key={index} className='cursor-pointer text-base text-text-color hover:text-blue-400 duration-100 transition-all ease-in-out ' >{item}</li>
+                            <li key={index} className='cursor-pointer text-base px-4 text-text-color hover:text-blue-400 duration-100 transition-all ease-in-out ' >{item}</li>
                         ))}
                     </motion.ul>
                     <motion.div whileTap={{ scale: 0.5 }} className=' relative flex justify-center items-center cursor-pointer'>
