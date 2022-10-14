@@ -30,7 +30,7 @@ const MainContainer = () => {
                     <div className='flex gap-2 items-center'>
                         {[1, 2].map((item, index) => (
                             <div onClick={() => handleScroll(index)} key={index} className=' md:flex justify-center items-center hidden  w-6 h-6 rounded-md bg-orange-400 cursor-pointer hover:bg-orange-600 transition-all ease-out duration-200'>
-                                {item == 1 ? <MdChevronLeft className='text-lg text-white' /> : <MdChevronRight className='text-lg text-white' />}
+                                {item === 1 ? <MdChevronLeft className='text-lg text-white' /> : <MdChevronRight className='text-lg text-white' />}
                             </div>
                         ))}
                     </div>
