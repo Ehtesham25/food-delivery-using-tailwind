@@ -12,7 +12,7 @@ const Home = () => {
                     <p className='text-base text-orange-400 font-semibold '>Bike Delivery</p>
                     <img src={delivery} className="w-7 h-7 rounded-full" alt="delivery" />
                 </div>
-                <p className='text-[2rem] lg:text-[3rem] font-bold capitalize tracking-wide'>the fastest delivery in <span className='text-[2.4rem] lg:text-[3.5rem] text-orange-400'>Your Town.</span></p>
+                <p className='text-[2rem] lg:text-[3rem] font-bold capitalize tracking-wide'>the fastest delivery in <span className='text-[2.4rem] lg:text-[3.5rem] text-orange-400'>Your city.</span></p>
                 <p className='text-base'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quas hic omnis eveniet excepturi nesciunt incidunt odio quae. Eligendi, ullam!</p>
                 <button className="bg-gradient-to-br from bg-orange-400 to orange-500 rounded-lg p-3 text-center font-medium ">Order Now</button>
             </div>
