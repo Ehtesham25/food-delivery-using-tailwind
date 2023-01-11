@@ -18,7 +18,7 @@ const Home = () => {
             </div>
 
             <div className='py-2 flex-1 flex items-center relative' >
-                <img src={heroBg} alt="Home image" className=' ml-auto h-420 w-full lg:w-auto lg:h-650' />
+                <img src={heroBg} alt="home" className=' ml-auto h-420 w-full lg:w-auto lg:h-650' />
                 <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-12  py-4 gap-4 flex-wrap'>
                     {homeData &&
                         homeData.map((item) => (
