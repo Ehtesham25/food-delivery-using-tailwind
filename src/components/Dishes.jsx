@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MdFastfood } from 'react-icons/md'
+import { MdFastfood } from 'react-icons/md';
 
 import { categories } from "../utils/data"
 import Text from './Text'
