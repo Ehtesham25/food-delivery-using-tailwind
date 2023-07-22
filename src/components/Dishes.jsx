@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { MdFastfood } from 'react-icons/md'
 
 import { categories } from "../utils/data"
