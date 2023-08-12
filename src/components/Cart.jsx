@@ -97,5 +97,4 @@ const Cart = () => {
         </motion.div>
     )
 }
-
 export default Cart
