@@ -33,4 +33,4 @@ const Dishes = () => {
     )
 }
 
-export default Dishes
+export default Dishes;
