@@ -2,7 +2,7 @@ import React from 'react';
 
 import { homeData } from '../utils/data';
 import delivery from "../assets/delivery.png";
-import heroBg from "../assets/heroBg.png"
+import heroBg from "../assets/heroBg.png";
 
 const Home = () => {
     return (
