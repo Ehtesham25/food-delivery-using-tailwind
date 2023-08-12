@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import { homeData } from '../utils/data'
 import delivery from "../assets/delivery.png"
