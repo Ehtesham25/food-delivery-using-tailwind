@@ -20,5 +20,4 @@ function App() {
     </AnimatePresence>
   );
 }
-
 export default App;
