@@ -19,5 +19,5 @@ function App() {
       </div>
     </AnimatePresence>
   );
-}
+};
 export default App;
